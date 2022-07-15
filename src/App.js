@@ -17,7 +17,7 @@ function decryptName(name) {
   return name.substring(4).split("").reverse().join("");
 }
 
-const GITHUB_USERNAME = "byleth127";
+const GITHUB_USERNAME = "hilda127";
 const TEMPLATE_REPO_NAME = "boilerplate";
 
 function App() {

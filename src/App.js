@@ -1,6 +1,6 @@
 import "./App.css";
 
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import startCase from "lodash.startcase";
 
 import { Octokit } from "@octokit/rest";

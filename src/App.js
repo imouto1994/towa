@@ -20,37 +20,44 @@ function decryptName(name) {
 const GITHUB_USERNAME = "hilda127";
 const TEMPLATE_REPO_NAME = "boilerplate";
 
+function naturalCompare(s1, s2) {
+  return s1.localeCompare(s2, undefined, {
+    numeric: true,
+    sensitivity: "base",
+  });
+}
+
 function App() {
-  const [names, setNames] = useState([]);
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     (async () => {
-      const { data: repos } = await octokit.rest.repos.listForUser({
+      const { data: newRepos } = await octokit.rest.repos.listForUser({
         username: GITHUB_USERNAME,
       });
-      setNames(
-        repos
-          .map((repo) => repo.name)
-          .filter((name) => name !== TEMPLATE_REPO_NAME)
+      for (const repo of newRepos) {
+        repo.displayedName = startCase(decryptName(repo.name));
+      }
+      newRepos.sort((r1, r2) =>
+        naturalCompare(r1.displayedName, r2.displayedName)
       );
+      setRepos(newRepos.filter((r) => r.name !== TEMPLATE_REPO_NAME));
     })();
   }, []);
 
   return (
     <div className="App">
-      {names.map((name) => (
-        <AppLink key={name} name={name} />
+      {repos.map((repo) => (
+        <AppLink key={repo.name} repo={repo} />
       ))}
     </div>
   );
 }
 
 function AppLink(props) {
-  const { name } = props;
-
-  const displayedName = useMemo(() => {
-    return startCase(decryptName(name));
-  }, [name]);
+  const {
+    repo: { name, displayedName },
+  } = props;
 
   return (
     <a

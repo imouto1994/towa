@@ -113,6 +113,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .App {
   padding: 24px 32px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.App-group {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 16px;
+  margin-right: 12px;
 }
 
 .App-link {
@@ -120,21 +129,50 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
-  color: white;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-right: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   padding: 8px 24px;
-  background: linear-gradient(
-    45deg,
-    #3bade3 0%,
-    #576fe6 25%,
-    #9844b7 51%,
-    #ff357f 100%
-  );
-  box-shadow: 0 4px 15px 0 rgb(126 52 161 / 75%);
+  background-size: 100% auto;
+  box-shadow: 0 0 20px rgba(100, 100, 100, 0.75);
   border-radius: 48px;
+}
+
+.App-group:nth-child(9n + 1) .App-link {
+  background: linear-gradient(135deg, #d6ea08, #ef00ff);
+}
+
+.App-group:nth-child(9n + 2) .App-link {
+  background: linear-gradient(135deg, #22d9f1, #006cff);
+}
+
+.App-group:nth-child(9n + 3) .App-link {
+  background: linear-gradient(135deg, #ffbd20, #ff5e3a);
+}
+
+.App-group:nth-child(9n + 4) .App-link {
+  background: linear-gradient(135deg, #3bd1d3, #7b81ec);
+}
+
+.App-group:nth-child(9n + 5) .App-link {
+  background: linear-gradient(135deg, #ff24c9, #ff5e3a);
+}
+
+.App-group:nth-child(9n + 6) .App-link {
+  background: linear-gradient(135deg, #b721ff, #21d4fd);
+}
+
+.App-group:nth-child(9n + 7) .App-link {
+  background: linear-gradient(135deg, #4fd8f5, #62ef7e);
+}
+
+.App-group:nth-child(9n + 8) .App-link {
+  background: linear-gradient(135deg, #2f7dff, #a1ddf9);
+}
+
+.App-group:nth-child(9n + 9) .App-link {
+  background: linear-gradient(135deg, #d6ea08, #00ff4e);
 }
 
 .App-iframe {

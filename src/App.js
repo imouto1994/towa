@@ -52,6 +52,7 @@ function useRepoGroups() {
       // Fetch repos
       let { data: repos } = await octokit.rest.repos.listForUser({
         username: GITHUB_USERNAME,
+        per_page: 100,
       });
 
       repos = repos.filter((repo) => repo.name !== TEMPLATE_REPO_NAME);

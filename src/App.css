@@ -120,7 +120,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .App-group {
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   margin-right: 12px;
 }
 
@@ -132,47 +132,50 @@ input[type="search"]::-webkit-search-results-decoration {
   color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 6px;
   padding: 8px 24px;
   background-size: 100% auto;
-  box-shadow: 0 0 20px rgba(100, 100, 100, 0.75);
-  border-radius: 48px;
+  border-top-right-radius: 48px;
+  border-bottom-right-radius: 48px;
+}
+
+.App-link:not(:first-child) {
+  border-top: 1px solid black;
 }
 
 .App-group:nth-child(9n + 1) .App-link {
-  background: linear-gradient(135deg, #d6ea08, #ef00ff);
+  background: linear-gradient(90deg, #d6ea08, #ef00ff);
 }
 
 .App-group:nth-child(9n + 2) .App-link {
-  background: linear-gradient(135deg, #22d9f1, #006cff);
+  background: linear-gradient(90deg, #22d9f1, #006cff);
 }
 
 .App-group:nth-child(9n + 3) .App-link {
-  background: linear-gradient(135deg, #ffbd20, #ff5e3a);
+  background: linear-gradient(90deg, #ffbd20, #ff5e3a);
 }
 
 .App-group:nth-child(9n + 4) .App-link {
-  background: linear-gradient(135deg, #3bd1d3, #7b81ec);
+  background: linear-gradient(90deg, #3bd1d3, #7b81ec);
 }
 
 .App-group:nth-child(9n + 5) .App-link {
-  background: linear-gradient(135deg, #ff24c9, #ff5e3a);
+  background: linear-gradient(90deg, #ff24c9, #ff5e3a);
 }
 
 .App-group:nth-child(9n + 6) .App-link {
-  background: linear-gradient(135deg, #b721ff, #21d4fd);
+  background: linear-gradient(90deg, #b721ff, #21d4fd);
 }
 
 .App-group:nth-child(9n + 7) .App-link {
-  background: linear-gradient(135deg, #4fd8f5, #62ef7e);
+  background: linear-gradient(90deg, #4fd8f5, #62ef7e);
 }
 
 .App-group:nth-child(9n + 8) .App-link {
-  background: linear-gradient(135deg, #2f7dff, #a1ddf9);
+  background: linear-gradient(90deg, #2f7dff, #a1ddf9);
 }
 
 .App-group:nth-child(9n + 9) .App-link {
-  background: linear-gradient(135deg, #d6ea08, #00ff4e);
+  background: linear-gradient(90deg, #d6ea08, #00ff4e);
 }
 
 .App-iframe {

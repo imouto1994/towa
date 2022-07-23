@@ -142,103 +142,44 @@ input[type="search"]::-webkit-search-results-decoration {
   border-top: 1px solid black;
 }
 
-.App-group:nth-child(12n + 1) .App-link {
-  background: linear-gradient(
-    to right,
-    #ff512f,
-    #dd2476
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 1) .App-link {
+  background: linear-gradient(to right, #ff512f, #dd2476);
 }
 
-.App-group:nth-child(12n + 2) .App-link {
-  background: linear-gradient(
-    to right,
-    #a8ff78,
-    #78ffd6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 2) .App-link {
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
 }
 
-.App-group:nth-child(12n + 3) .App-link {
-  background: linear-gradient(
-    to right,
-    #f5af19,
-    #f12711
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 3) .App-link {
+  background: linear-gradient(to right, #f5af19, #f12711);
 }
 
-.App-group:nth-child(12n + 4) .App-link {
-  background: linear-gradient(
-    to right,
-    #78ffd6,
-    #007991
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 4) .App-link {
+  background: linear-gradient(to right, #78ffd6, #007991);
 }
 
-.App-group:nth-child(12n + 5) .App-link {
-  background: linear-gradient(
-    to right,
-    #ffc371,
-    #ff5f6d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 5) .App-link {
+  background: linear-gradient(to right, #ffc371, #ff5f6d);
 }
 
-.App-group:nth-child(12n + 6) .App-link {
-  background: linear-gradient(
-    to right,
-    #fdfc47,
-    #24fe41
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 6) .App-link {
+  background: linear-gradient(to right, #fdfc47, #24fe41);
 }
 
-.App-group:nth-child(12n + 7) .App-link {
-  background: linear-gradient(
-    to right,
-    #f4c4f3,
-    #fc67fa
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 7) .App-link {
+  background: linear-gradient(to right, #f4c4f3, #fc67fa);
 }
 
-.App-group:nth-child(12n + 8) .App-link {
-  background: linear-gradient(
-    to right,
-    #a5fecb,
-    #20bdff,
-    #5433ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 8) .App-link {
+  background: linear-gradient(to right, #a5fecb, #20bdff, #5433ff);
 }
 
-.App-group:nth-child(12n + 9) .App-link {
-  background: linear-gradient(
-    to right,
-    #e100ff,
-    #7f00ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 9) .App-link {
+  background: linear-gradient(to right, #e100ff, #7f00ff);
 }
 
-.App-group:nth-child(12n + 10) .App-link {
-  background: linear-gradient(
-    to right,
-    #00dbde,
-    #fc00ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.App-group:nth-child(12n + 11) .App-link {
-  background: linear-gradient(
-    to right,
-    #fdeff9,
-    #ec38bc,
-    #7303c0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.App-group:nth-child(12n + 12) .App-link {
-  background: linear-gradient(
-    to right,
-    #ffffff,
-    #6dd5fa,
-    #2980b9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-group:nth-child(10n + 10) .App-link {
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
 }
 
 .App-iframe {

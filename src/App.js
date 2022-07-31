@@ -118,18 +118,48 @@ function AppGroup(props) {
 
 function AppLink(props) {
   const {
-    repo: { name, displayedName },
+    repo: {
+      name,
+      displayedName,
+      html_url: htmlUrl,
+      owner: { login: username },
+    },
   } = props;
+  console.log(props.repo);
 
   return (
-    <a
-      className="App-link"
-      target="_blank"
-      rel="noopener noreferrer"
-      href={`https://${GITHUB_USERNAME}.github.io/${name}/`}
+    <div className="App-link-wrapper">
+      <a
+        className="App-link-github"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={htmlUrl}
+      >
+        <GithubIcon className="App-link-github-icon" />
+      </a>
+      <a
+        className="App-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={`https://${username}.github.io/${name}/`}
+      >
+        {displayedName}
+      </a>
+    </div>
+  );
+}
+
+function GithubIcon(props) {
+  const { className } = props;
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      className={className}
     >
-      {displayedName}
-    </a>
+      <path d="M16 .4a16 16 0 0 0-5.06 31.18c.8.15 1.09-.34 1.09-.77l-.01-2.72c-4.46.96-5.4-2.15-5.4-2.15-.73-1.85-1.78-2.34-1.78-2.34-1.45-1 .12-.97.12-.97 1.6.1 2.45 1.65 2.45 1.65 1.42 2.44 3.74 1.74 4.66 1.32a3.39 3.39 0 0 1 1-2.13c-3.54-.4-7.28-1.78-7.28-7.9 0-1.76.62-3.19 1.65-4.3a5.7 5.7 0 0 1 .14-4.24s1.34-.43 4.4 1.64a15.25 15.25 0 0 1 8 0c3.04-2.07 4.38-1.64 4.38-1.64.86 2.2.31 3.83.16 4.23a6.22 6.22 0 0 1 1.63 4.3c0 6.15-3.74 7.5-7.3 7.9.56.47 1.08 1.46 1.08 2.95l-.01 4.39c0 .41.28.91 1.1.75C27.42 29.45 32 23.45 32 16.4a16 16 0 0 0-16-16z" />
+    </svg>
   );
 }
 

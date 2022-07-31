@@ -124,6 +124,25 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 12px;
 }
 
+.App-link-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.App-link-github {
+  background: white;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+
+.App-link-github-icon {
+  height: 16px;
+}
+
 .App-link {
   display: inline-block;
   cursor: pointer;
@@ -133,12 +152,11 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 24px 8px 8px;
-  background-size: 100% auto;
+  background-size: 500% auto;
   border-top-right-radius: 48px;
-  border-bottom-right-radius: 48px;
 }
 
-.App-link:not(:first-child) {
+.App-link-wrapper:not(:first-child) {
   border-top: 1px solid black;
 }
 
